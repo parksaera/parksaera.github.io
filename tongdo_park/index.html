@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자연속 축제의 나라 통도환타지아</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="common/css/common.css">
+    <script src="common/js/main.js"></script>  
+    <script src="common/js/ui.js"></script>  
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner-wrap">
+                <div class="top-area clfix">
+                    <div class="fl">
+                        <div class="links clfix">
+                            <a href="#">통도환타지아</a>
+                            <a href="#">아쿠아환타지아</a>
+                            <a href="#">환타지아콘도&호텔</a>
+                            <a href="#">환타지아드림나이트</a>
+                            <a href="#">통도파인이스트CC</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="col1">
+                            <a href="member/login.html">로그인</a>
+                            <a href="member/join-step1.html">회원가입</a>
+                            <a href="#">단체프로그램</a>
+                        </div>
+                        <div class="col2">
+                            <div class="lang">
+                                <button type="button" class="btn-lang"><span class="blind">언어선택</span></button>
+                                    <div class="lang-list">
+                                        <a href="#">KOR</a>
+                                        <a href="#">ENG</a>
+                                        <a href="#">JPN</a>
+                                    </div>
+                            </div>
+                            <button type="button" class="btn-sch"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-area clfix">
+                    <h1 class="logo"><a href="index.html"><img src="common/images/logo.png" alt="통도환타지아"></a></h1>
+                    <h2 class="blind">메인메뉴</h2>
+                    <nav id="gnb">
+                        <ul class="gnb-list">
+                                <li class="oneD">
+                                    <a href="#">즐길거리</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href="#">추천코스</a></li>
+                                            <li><a href="enjoy/attraction-list.html">어트랙션</a></li>
+                                            <li><a href="#">체험시설</a></li>
+                                            <li class="twoD">
+                                                <a href="#">편의시설</a>
+                                                <div class="thrD">
+                                                    <ul>
+                                                        <li><a href="#">레스토랑</a></li>
+                                                        <li><a href="#">부대시설</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                            <li><a href="#">드림나이트</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="oneD">
+                                <a href="price/benefit.html">요금/혜택</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="price/ticket.html">티켓요금</a></li>
+                                        <li class="twoD">
+                                            <a href="price/benefit.html">혜택정보</a>
+                                            <div class="thrD">
+                                                <ul>
+                                                    <li><a href="price/benefit.html">할인</a></li>
+                                                    <li><a href="price/affiliated.html">카드</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">연간이용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">이용안내</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="use-guide/service.html">운영/운휴</a></li>
+                                        <li><a href="#">교통정보</a></li>
+                                        <li><a href="#">이용가이드</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">공지사항</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="notice/news_list.html">새소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">고객센터</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="customer/faq.html">FAQ</a></li>
+                                        <li><a href="board/inquiry_write.html">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <div class="fr">
+                        <button type="button" class="btn-ticketing"><span>예매하기</span></button>
+                    </div>
+                </div>
+                <div class="sch-area">
+                    <div class="inner-wrap">
+                        <form id="schForm" name="schForm" action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색폼</legend>
+                                <div class="inp-box">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch">
+                                        <i class="fa-solid fa-magnifying-glass"><span class="blind">검색</span></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn-close">
+                            <i class="fa-solid fa-xmark"><span class="blind">닫기</span></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="main-visual">
+            <div class="swiper-list" id="main-slide">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="common/images/main_slide_img_1.png" alt=""></div>
+                  <div class="swiper-slide"><img src="common/images/main_slide_img_2.png" alt=""></div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>     
+        </div>
+        <div id="quick-menu">
+            
+            <div class="inner-wrap clfix">
+                <div class="main-tit fl">
+                    <span>서비스 바로가기</span>
+                    <span>
+                        통도환타지아의 이용에 필요한<br>
+                        각종 정보를 제공해드립니다.
+                    </span>
+                </div>
+                <div class="quik-link">
+                    <ul class="links-top clfix">
+                        <li>
+                            <a href="price/ticket.html">
+                                <p>티켓요금</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>교통정보</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>미아찾기방송</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="links-bot">
+                        <li>
+                            <a href="#">
+                                <p>레스토랑</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="customer/faq.html">
+                                <p>자주찾는질문</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>      
+        <div id="main-con1" class="maincon">
+            <div class="inner-wrap">
+                <h2 class="main-tit">
+                    <span>혜택정보</span>
+                    <span>다양한 할인혜택 정보를 만나보세요.</span>
+                </h2>
+                <div class="tab-wrap">
+                    <ul class="tab-menu">
+                        <li class="on"><a href="#tab-ben-con1">할인</a></li>
+                        <li><a href="#tab-ben-con2">카드</a></li>
+                    </ul>
+                
+                <section id="tab-ben-con1" class="tab-con clfix">
+                    <h3 class="blind">할인</h3>
+                    <div class="item">
+                        <a href="price/benefit.html">
+                            <span class="img-box">
+                                <img src="../tongdo_park/common/images/main_con_1_img_1.png" alt="">
+                            </span>      
+                            <div class="txt-box">
+                                <p>
+                                    <strong>장애인 우대</strong>
+                                </p>
+                                <p>
+                                    <em>
+                                    본인 동반 1인까지 입장권 또는<br>
+                                    자유이용권 50% 할인
+                                    </em>
+                                </p>
+                            </div> 
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="price/benefit.html">
+                            <span class="img-box">
+                                <img src="../tongdo_park/common/images/main_con_1_img_2.png" alt="">
+                            </span>
+                       
+                            <div class="txt-box">
+                                <p>
+                                    <strong>3인이상 다자녀 가정우대</strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        입장권 또는 자유이용권 30%할인<br>
+                                        야간입장 20% 할인
+                                    </em>
+                                </p>
+                            </div>
+                        </a>
+                    </div>    
+                    <div class="item">
+                        <a href="price/benefit.html">
+                            <span class="img-box">
+                                <img src="../tongdo_park/common/images/main_con_1_img_3.png" alt="">
+                            </span>
+                    
+                            <div class="txt-box">
+                                <p>
+                                    <strong>임산부 우대</strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        입장권 또는 자유이용권 30%할인<br>
+                                        야간입장 20% 할인
+                                    </em>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+                <section id="tab-ben-con2" class="tab-con clfix">
+                    <h3 class="blind">카드</h3>
+                    <div class="item">
+                        <a href="price/affiliated.html">
+                            <span class="img-box">
+                                <img src="../tongdo_park/common/images/card-img-1.png" alt="롯데 데일리 카드">
+                            </span>
+                        
+                            <div class="txt-box">
+                                <p>
+                                    <strong>롯데 데일리카드</strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        종합 자유이용권 50%할인<br>
+                                        -연1회,연 12회 제공
+                                    </em>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="price/affiliated.html">
+                            <span class="img-box">
+                                <img src="../tongdo_park/common/images/card-img-2.png" alt="올 마이 쇼핑카드">
+                            </span>
+                        
+                            <div class="txt-box">
+                                <p>
+                                    <strong>롯데 올 마이 쇼핑카드</strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        본인 종합,자유이용권 50% 현장할인<br>
+                                        -지난달(1일~말일)일시불 및 할부
+                                    </em>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="item">
+                        <a href="price/affiliated.html">
+                            <span class="img-box">
+                                <img src="../tongdo_park/common/images/card-img-3.png" alt="삼성카드">
+                            </span>
+                        
+                            <div class="txt-box">
+                                <p>
+                                    <strong>삼성 데일리카드</strong>
+                                </p>
+                                <p>
+                                    <em>
+                                        자유이용권 50% 현장할인<br>
+                                        -통합 연1회,연 2회 제공
+                                    </em>
+                                </p>
+                        </div>
+                        </a>
+                    </div>
+                </section>
+                </div>
+            </div>
+        </div>
+        <div id="main-con2" class="maincon">
+            <div class="inner-wrap">
+                <div class="obj2"><img src="../tongdo_park/common/images/circle_img_2.png" alt="circle"></div>
+                <div class="obj3"><img src="../tongdo_park/common/images/circle_img_3.png" alt="circle"></div>
+                <h2 class="main-tit">
+                    <span>어트랙션</span>
+                    <span>재미있고 즐거운 어트랙션을 즐겨보세요!</span>
+                </h2>
+                <div class="tab-wrap">
+                    <ul class="tab-menu clfix">
+                        <li class="on" data-tabCon="tab-attr-con1"><a href="#">유아전용</a></li>
+                        <li data-tabCon="tab-attr-con2"><a href="#">야간운행</a></li>
+                        <li data-tabCon="tab-attr-con3"><a href="#">우천운행</a></li>
+                    </ul>
+                    <section id="tab-attr-con1" class="tab-con clfix">
+                        <h3 class="blind">유아전용</h3>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_1.png" alt="플라이베이비카"></span>
+                                <div class="txt-box">
+                                    <p><strong>플라이베이비카</strong></p>
+                                    <p><em>유모차를 타고 하늘로 둥실둥실~</em></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_2.png" alt="범퍼카"></span>
+                                <div class="txt-box">
+                                    <p><strong>범퍼카</strong></p>
+                                    <p><em>이리쾅!저리쾅!통쾌한 충돌!</em></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_3.png" alt=""></span>
+                                <div class="txt-box">
+                                    <p><strong>회전목마</strong></p>
+                                    <p><em>낭만적인 동화 속 주인공이 되어볼까?</em></p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section id="tab-attr-con2" class="tab-con clfix">
+                        <h3 class="blind">야간운행</h3>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_4.png" alt="관람차"></span>
+                                <div class="txt-box">
+                                    <p><strong>관람차</strong></p>
+                                    <p><em>통도환타지아의 경관을 한 눈에!!</em></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_5.png" alt="풍선여행"></span>
+                                <div class="txt-box">
+                                    <p><strong>풍선여행</strong></p>
+                                    <p><em>	알록달록 풍선타고 신나는 하늘 여행! </em></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_6.png" alt="써키트2000"></span>
+                                <div class="txt-box">
+                                    <p><strong>	써키트2000</strong></p>
+                                    <p><em>어린이들이 좋아하는 자동차 총 출동!</em></p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                    <section id="tab-attr-con3" class="tab-con clfix">
+                        <h3 class="blind">우천운행</h3>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_7.png" alt=""></span>
+                                <div class="txt-box">
+                                    <p><strong>	드라큐라백작의 초대</strong></p>
+                                    <p><em>악마의 영이 깃든 공포의 성...</em></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_8.png" alt="혹성탈출"></span>
+                                <div class="txt-box">
+                                    <p><strong>혹성탈출</strong></p>
+                                    <p><em>깜짝 깜짝 즐거운 우주 체험!!</em></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item">
+                            <a href="enjoy/attraction-view.html">
+                                <span><img src="../tongdo_park/common/images/main_con_2_img_9.png" alt="다람쥐통"></span>
+                                <div class="txt-box">
+                                    <p><strong>다람쥐통</strong></p>
+                                    <p><em>떼구르르르... 까르르르르...</em></p>
+                                </div>
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <div id="main-con3" class="maincon">
+            <div class="inner-wrap">
+                <h2 class="main-tit">
+                    <span>공지사항</span>
+                    <span>통도환타지아의 소식을 알려드립니다.</span>
+                </h2>
+               <div class="news-wrap">
+                   <ul class="card-news clfix">
+                       <li>
+                            <a href="#">
+                                <div class="txt-box">
+                                    코로나19 확산 방지로 인하여 휴장을 하오니 양해부탁드립니다.
+                                </div>
+                                <span class="date">2022-01-14</span>
+                            </a>
+                       </li>
+                       <li>
+                        <a href="#">
+                            <div class="txt-box">
+                                ■ 기간: 2022년 2월 28일까지 ■ 평일 운행되는 놀이기종은 9기종입니다.
+                            </div>
+                            <span class="date">2022-01-01</span>
+                        </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="txt-box">
+                                    12월 26일(수)부터 통도환타지아 운영시간이 변경됨을 알려드립니다.
+                                </div>
+                            <span class="date">2021-12-05</span>
+                            </a>
+                        </li>
+                   </ul>
+               </div>
+            </div>
+        </div>
+        <div id="main-banner">
+            <div class="inner-wrap">
+                <img src="common/images/banner_dream_night.png" alt="환타지아드림나이트">
+            </div>
+        </div>
+        <div id="main-con4">
+            <div class="inner-wrap">
+                <h2 class="main-tit">
+                    <span>통도환타지아 인스타그램</span>
+                    <span>@td_fantasia</span>
+                </h2>
+                <div class="insta-wrap clfix">
+                    <div class="item"><a href="#"><img src="common/images/main_con_5_img_1.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="common/images/main_con_5_img_2.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="common/images/main_con_5_img_3.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="common/images/main_con_5_img_4.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="common/images/main_con_5_img_5.png" alt=""></a></div>
+                    <div class="item"><a href="#"><img src="common/images/main_con_5_img_6.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="top">
+                <div class="inner-wrap clfix">
+                    <div class="fl">
+                        <div class="footer-links">
+                            <a href="#">회사소개</a>
+                            <a href="#">이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                            <a href="#">이메일무단수집거부</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="sns-links">
+                        <a href="#"><span class="blind">페이스북</span></a>
+                        <a href="#"><span class="blind">인스타그램</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btm">
+                <div class="inner-wrap">
+                    <address>
+                        <p>(주)동일리조트 통도환타지아</p>
+                        <p>(경남 양산시 하북면 통도7길 68</p>
+                        <p>사업자등록번호 : 621-85-03494</p>
+                        <p>고객상담센터 : 055-379-7000</p>
+                    </address>
+                    <p class="copyright">
+                        <span>
+                            Copyright &copy; 2004~2017 TONGDO FANTASIA All rights reserved.
+                        </span>
+                    </p>
+                
+                <div class="family-site">
+                    <select>
+                        <option value="">패밀리사이트</option>
+                        <option value="http://www">아쿠아환타지아</option>
+                        <option value="http://www">환타지아 콘도&amp;호텔</option>
+                        <option value="http://www">환타지아드림나이트</option>
+                        <option value="http://www">통도파인이스트CC</option>
+                        <option value="http://www">통도환타지아</option>
+                    </select>
+                </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

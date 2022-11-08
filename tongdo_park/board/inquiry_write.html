@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문의하기 | 자연속 축제의 나라 통도환타지아</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <script src="../common/js/ui.js"></script> 
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner-wrap">
+                <div class="top-area clfix">
+                    <div class="fl">
+                        <div class="links clfix">
+                            <a href="#">통도환타지아</a>
+                            <a href="#">아쿠아환타지아</a>
+                            <a href="#">환타지아콘도&호텔</a>
+                            <a href="#">환타지아드림나이트</a>
+                            <a href="#">통도파인이스트CC</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="col1">
+                            <a href="../member/login.html">로그인</a>
+                            <a href="../member/join-step1.html">회원가입</a>
+                            <a href="#">단체프로그램</a>
+                        </div>
+                        <div class="col2">
+                            <div class="lang">
+                                <button type="button" class="btn-lang"><span class="blind">언어선택</span></button>
+                                    <div class="lang-list">
+                                        <a href="#">KOR</a>
+                                        <a href="#">ENG</a>
+                                        <a href="#">JPN</a>
+                                    </div>
+                            </div>
+                            <button type="button" class="btn-sch"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-area clfix">
+                    <h1 class="logo"><a href="../index.html"><img src="../common/images/logo.png" alt="통도환타지아"></a></h1>
+                    <h2 class="blind">메인메뉴</h2>
+                    <nav id="gnb">
+                        <ul class="gnb-list">
+                                <li class="oneD">
+                                    <a href="#">즐길거리</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href="#">추천코스</a></li>
+                                            <li><a href="../enjoy/attraction-list.html">어트랙션</a></li>
+                                            <li><a href="#">체험시설</a></li>
+                                            <li class="twoD">
+                                                <a href="#">편의시설</a>
+                                                <div class="thrD">
+                                                    <ul>
+                                                        <li><a href="#">레스토랑</a></li>
+                                                        <li><a href="#">부대시설</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                            <li><a href="#">드림나이트</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="oneD">
+                                <a href="../price/benefit.html">요금/혜택</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../price/ticket.html">티켓요금</a></li>
+                                        <li class="twoD">
+                                            <a href="../price/benefit.html">혜택정보</a>
+                                            <div class="thrD">
+                                                <ul>
+                                                    <li><a href="../price/benefit.html">할인</a></li>
+                                                    <li><a href="../price/affiliated.html">카드</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">연간이용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">이용안내</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../use-guide/service.html">운영/운휴</a></li>
+                                        <li><a href="#">교통정보</a></li>
+                                        <li><a href="#">이용가이드</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">공지사항</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../notice/news_list.html">새소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">고객센터</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../customer/faq.html">FAQ</a></li>
+                                        <li><a href="../board/inquiry_write.html">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <div class="fr">
+                        <button type="button" class="btn-ticketing"><span>예매하기</span></button>
+                    </div>
+                </div>
+                <div class="sch-area">
+                    <div class="inner-wrap">
+                        <form id="schForm" name="schForm" action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색폼</legend>
+                                <div class="inp-box">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch">
+                                        <i class="fa-solid fa-magnifying-glass"><span class="blind">검색</span></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn-close">
+                            <i class="fa-solid fa-xmark"><span class="blind">닫기</span></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-top inquiry-top">
+        <div class="inner-wrap">
+            <div class="breadcrum-wrap">
+                <a href="#" class="home">
+                    <span class="blind">홈</span>
+                </a>
+                <div class="one-depth depth">
+                    <a href="#">고객센터</a>
+                    <div class="menu-wrap">
+                        <a href="../price/benefit.html">요금/혜택</a>
+                        <a href="#">이용안내</a>
+                        <a href="#">공지사항</a>
+                        <a href="#">고객센터</a>
+                    </div>
+                </div>
+                <div class="two-depth depth">
+                    <a href="#">문의하기</a>
+                        <div class="menu-wrap">
+                            <a href="../customer/faq.html">FAQ</a>
+                            <a href="#">문의하기</a>
+                        </div>
+                </div>
+            </div>
+            <div class="txt-box">
+                <h2>문의하기</h2>
+            </div>
+        </div>
+        </div>
+        <div class="sub-container inquiry-con">
+            <div class="inner-wrap">
+                <h3 class="sub-tit">개인정보 수집 및 이용에 대한 안내</h3>
+                <div>
+                    <p>저희 통도환타지아에 칭찬사항이나 불편, 문의사항을 남겨주세요.</p>
+                    <p>개인정보 수집 및 활용에 대한 동의와 아래 내용을 확인하신 후 등록해주세요.</p>
+                </div>
+                <div class="tbl-wrap">
+                        <ul class="txt-box">
+                            <li>
+                                <em>개인정보 및 이용목적</em>
+                                <p>문의,요청,불만,칭찬,제안 등 voc처리</p>
+                            </li>
+                            <li>
+                                <em>수집항목</em>
+                                <p>이름,성별,이메일,연락처,비밀번호</p>
+                            </li>
+                            <li>
+                                <em>개인정보의 보유 및 이용기간</em>
+                                <p>
+                                    보유 및 이용기간:3년<br>
+                                    -관련근거<br>
+                                    전자상거래 등에서의 소비자보호에 관한 법률<br>
+                                    소비자의 불만 또는 분쟁처리에 관한 기록
+                                </p>
+                            </li>
+                        </ul> 
+                </div>
+                <div class="conf">
+                    <p>-개인정보 수집 및 활용에 대한 동의를 거부하실 수 있습니다. 단, 동의 거부 시 작성하신 내용이 등록되지 않습니다.</p>
+                    <p>-자세한 내용은 개인정보 보호정책에서 확인 하실 수 있습니다.</p>
+                </div>
+                <form name="inquiryForm" id="inquiryForm" method="" action="http://www.naver.com">
+                    <fieldset>
+                        <legend class="blind">문의하기</legend>
+                        <div>
+                            <span class="chk">
+                                <input type="checkbox" id="" name="">
+                            </span>    
+                            <label>개인정보 수집 및 활용에 동의합니다.<strong>(필수)</strong></label>
+                        </div>
+                        <div class="tbl-wrap">
+                            <table class="tbl-typ-B">
+                                <colgroup>
+                                    <col style="width: 252px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">구분</th>
+                                        <td class="al">
+                                            <div>
+                                                <input type="radio" id="" name=""><label>칭찬</label>
+                                                <input type="radio" id="" name=""><label>불편</label>
+                                                <input type="radio" id="" name=""><label>문의</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">서비스 유형</th>
+                                        <td class="al">
+                                            <div>
+                                                <span class="sel-box">
+                                                    <select id="" name="">
+                                                        <option>옵션입력1</option>
+                                                        <option>옵션입력2</option>
+                                                        <option>옵션입력3</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이름</th>
+                                        <td class="al">
+                                            <div>
+                                                <span class="inp-txt">
+                                                    <input type="text" id="" name="" placeholder="이름을 입력하세요"> 
+                                                </span>    
+                                            </div>      
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">성별</th>
+                                        <td class="al">
+                                            <input type="radio" id="" name=""><label>남</label>
+                                            <input type="radio" id="" name=""><label>여</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">연령</th>
+                                        <td class="al">
+                                            <input type="radio" id="" name=""><label>10대</label>
+                                            <input type="radio" id="" name=""><label>20대</label>
+                                            <input type="radio" id="" name=""><label>30대</label>
+                                            <input type="radio" id="" name=""><label>40대</label>
+                                            <input type="radio" id="" name=""><label>50대</label>
+                                            <input type="radio" id="" name=""><label>60대</label>
+                                            <input type="radio" id="" name=""><label>70대 이상</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">방문일</th>
+                                        <td class="al">
+
+                                            <input type="date" id="" name="">
+                                            <input type="text" placeholder="2022-04-22" id="" name="">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">이메일</th>
+                                        <td class="al">
+                                            <div>
+                                                <span class="inp-txt">
+                                                    <input type="text" id="" name="">
+                                                </span>
+                                                <span>@</span> 
+                                                <span class="sel-box">
+                                                    <select id="" name="">
+                                                        <option selected>이메일선택</option>
+                                                        <option>네이버</option>
+                                                        <option>다음</option>
+                                                        <option>옵션입력3</option>
+                                                    </select>
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">회신방법</th>
+                                        <td class="al">
+                                            <input type="radio" id="" name=""><label>이메일</label>
+                                            <input type="radio" id="" name=""><label>전화</label>
+                                            <input type="radio" id="" name="" checked><label>카카오톡</label>
+                                            <input type="radio" id="" name=""><label>회신불필요</label>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">제목</th>
+                                        <td class="al">
+                                            <span class="inp-txt">
+                                                <input type="text" id="" name="">
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">내용</th>
+                                        <td class="al">
+                                            <div>
+                                                <textarea cols="100" rows="5">상담내용을 입력하세요</textarea>
+                                            </div>    
+                                        </td>
+                                    </tr>  
+                                    <tr>
+                                        <th scope="row">파일첨부</th>
+                                        <td class="al">
+                                            <div>
+                                                <div class="file-box">
+                                                    <input type="text">
+                                                    <label for="" class="blind">파일첨부</label>
+                                                    <input type="file" id="" name="">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </fieldset>
+                    <div class="button-wrap">
+                        <button type="reset" class="btn-outline-lg">취소</button>   
+                        <button type="submit" class="btn-outline-lg submit">작성완료</button>   
+                    </div>   
+                </form>          
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="top">
+                <div class="inner-wrap clfix">
+                    <div class="fl">
+                        <div class="footer-links">
+                            <a href="#">회사소개</a>
+                            <a href="#">이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                            <a href="#">이메일무단수집거부</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="sns-links">
+                        <a href="#"><span class="blind">페이스북</span></a>
+                        <a href="#"><span class="blind">인스타그램</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="btm">
+                <div class="inner-wrap">
+                    <address>
+                        <p>(주)동일리조트 통도환타지아</p>
+                        <p>(경남 양산시 하북면 통도7길 68</p>
+                        <p>사업자등록번호 : 621-85-03494</p>
+                        <p>고객상담센터 : 055-379-7000</p>
+                    </address>
+                    <p class="copyright">
+                        <span>
+                            Copyright &copy; 2004~2017 TONGDO FANTASIA All rights reserved.
+                        </span>
+                    </p>
+                    <div class="family-site">
+                        <select>
+                            <option value="">패밀리사이트</option>
+                            <option value="http://www">아쿠아환타지아</option>
+                            <option value="http://www">환타지아 콘도&amp;호텔</option>
+                            <option value="http://www">환타지아드림나이트</option>
+                            <option value="http://www">통도파인이스트CC</option>
+                            <option value="http://www">통도환타지아</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>새소식 | 자연속 축제의 나라 통도환타지아</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <script src="../common/js/ui.js"></script> 
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner-wrap">
+                <div class="top-area clfix">
+                    <div class="fl">
+                        <div class="links clfix">
+                            <a href="#">통도환타지아</a>
+                            <a href="#">아쿠아환타지아</a>
+                            <a href="#">환타지아콘도&호텔</a>
+                            <a href="#">환타지아드림나이트</a>
+                            <a href="#">통도파인이스트CC</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="col1">
+                            <a href="../member/login.html">로그인</a>
+                            <a href="../member/join-step1.html">회원가입</a>
+                            <a href="#">단체프로그램</a>
+                        </div>
+                        <div class="col2">
+                            <div class="lang">
+                                <button type="button" class="btn-lang"><span class="blind">언어선택</span></button>
+                                    <div class="lang-list">
+                                        <a href="#">KOR</a>
+                                        <a href="#">ENG</a>
+                                        <a href="#">JPN</a>
+                                    </div>
+                            </div>
+                            <button type="button" class="btn-sch"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-area clfix">
+                    <h1 class="logo"><a href="../index.html"><img src="../common/images/logo.png" alt="통도환타지아"></a></h1>
+                    <h2 class="blind">메인메뉴</h2>
+                    <nav id="gnb">
+                        <ul class="gnb-list">
+                                <li class="oneD">
+                                    <a href="#">즐길거리</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href="#">추천코스</a></li>
+                                            <li><a href="../enjoy/attraction-list.html">어트랙션</a></li>
+                                            <li><a href="#">체험시설</a></li>
+                                            <li class="twoD">
+                                                <a href="#">편의시설</a>
+                                                <div class="thrD">
+                                                    <ul>
+                                                        <li><a href="#">레스토랑</a></li>
+                                                        <li><a href="#">부대시설</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                            <li><a href="#">드림나이트</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="oneD">
+                                <a href="../price/benefit.html">요금/혜택</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../price/ticket.html">티켓요금</a></li>
+                                        <li class="twoD">
+                                            <a href="../price/benefit.html">혜택정보</a>
+                                            <div class="thrD">
+                                                <ul>
+                                                    <li><a href="../price/benefit.html">할인</a></li>
+                                                    <li><a href="../price/affiliated.html">카드</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">연간이용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">이용안내</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../use-guide/service.html">운영/운휴</a></li>
+                                        <li><a href="#">교통정보</a></li>
+                                        <li><a href="#">이용가이드</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">공지사항</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../notice/news_list.html">새소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">고객센터</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../customer/faq.html">FAQ</a></li>
+                                        <li><a href="../board/inquiry_write.html">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <div class="fr">
+                        <button type="button" class="btn-ticketing"><span>예매하기</span></button>
+                    </div>
+                </div>
+                <div class="sch-area">
+                    <div class="inner-wrap">
+                        <form id="schForm" name="schForm" action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색폼</legend>
+                                <div class="inp-box">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch">
+                                        <i class="fa-solid fa-magnifying-glass"><span class="blind">검색</span></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn-close">
+                            <i class="fa-solid fa-xmark"><span class="blind">닫기</span></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-top news-view-top">
+            <div class="inner-wrap">
+                <div class="breadcrum-wrap">
+                    <a href="#" class="home">
+                        <span class="blind">홈</span>
+                    </a>
+                    <div class="one-depth depth">
+                        <a href="#">공지사항</a>
+                        <div class="menu-wrap">
+                            <a href="#">요금/혜택</a>
+                            <a href="#">이용안내</a>
+                            <a href="#">공지사항</a>
+                            <a href="#">고객센터</a>
+                        </div>
+                    </div>
+                    <div class="two-depth depth">
+                        <a href="#">새소식</a>
+                            <div class="menu-wrap">
+                                <a href="#">새소식</a>
+                                <a href="#">이벤트</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="txt-box">
+                    <h2>새소식</h2>
+                </div>    
+            </div>   
+        </div>
+        <div class="sub-container news-con">
+            <div class="inner-wrap">
+                        <div class="sch-result">총<span>28</span>개의 글이 검색되었습니다.</div>
+                    
+                <div class="tbl-wrap">
+                    <table class="tbl-typ-B">
+                        <colgroup>
+                            <col style="width: 127px;">
+                            <col style="width: 132px;">
+                            <col style="width: 735px;">
+                            <col style="width: 146px;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th><strong>번호</strong></th>
+                                <th><strong>구분</strong></th>
+                                <th><strong>제목</strong></th>
+                                <th><strong>등록일</strong></th>
+                            </tr>    
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">[휴장안내] ~ 2022.02.28(월)</a>
+                                    </div>
+                                </td>
+                                <td>2021-12-27</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>이벤트</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">★고객의 소리함 12월 당첨자★</a>
+                                    </div>
+                                </td>
+                                <td>2021-12-04</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">12월 24일, 25일 환타지아 크리스마스 공연 안내</a>
+                                    </div>
+                                </td>
+                                <td>2021-12-02</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">통도환타지아 정기 휴장일 안내 hot+</a>
+                                    </div>
+                                </td>
+                                <td>2021-10-25</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">금일 강풍으로 인한 놀이기종 운행중지 안내</a>
+                                    </div>
+                                </td>
+                                <td>2021-09-20</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">통도 환타지아 추석 연휴 운영시간 안내</a>
+                                    </div>
+                                </td>
+                                <td>2021-09-01</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">통도환타지아 운영시간 변경 안내</a>
+                                    </div>
+                                </td>
+                                <td>2021-08-27</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>이벤트</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">★ 2017년 추석연휴 ★ 패밀리 홀리데이즈 대축제!!!</a>
+                                    </div>
+                                </td>
+                                <td>2021-08-21</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>이벤트</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">★ 드림나이트 특별 할인 ★</a>
+                                    </div>
+                                </td>
+                                <td>2021-08-20</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>공지</td>
+                                <td>
+                                    <div>
+                                        <a href="news_view.html">환타지아 콘도&호텔에서 근무할 경력자를 모집합니다</a>
+                                    </div>
+                                </td>
+                                <td>2021-08-20</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="paging">
+                    <a href="#" class="prev">이전</a>
+                    <span class="active">1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                    <span>7</span>
+                    <span>8</span>
+                    <span>9</span>
+                    <span>10</span>
+                    <a href="#" class="next">다음</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

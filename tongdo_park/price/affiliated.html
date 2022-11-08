@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>카드혜택 | 자연속 축제의 나라 통도환타지아</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <script src="../common/js/ui.js"></script> 
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner-wrap">
+                <div class="top-area clfix">
+                    <div class="fl">
+                        <div class="links clfix">
+                            <a href="#">통도환타지아</a>
+                            <a href="#">아쿠아환타지아</a>
+                            <a href="#">환타지아콘도&호텔</a>
+                            <a href="#">환타지아드림나이트</a>
+                            <a href="#">통도파인이스트CC</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="col1">
+                            <a href="../member/login.html">로그인</a>
+                            <a href="../member/join-step1.html">회원가입</a>
+                            <a href="#">단체프로그램</a>
+                        </div>
+                        <div class="col2">
+                            <div class="lang">
+                                <button type="button" class="btn-lang"><span class="blind">언어선택</span></button>
+                                    <div class="lang-list">
+                                        <a href="#">KOR</a>
+                                        <a href="#">ENG</a>
+                                        <a href="#">JPN</a>
+                                    </div>
+                            </div>
+                            <button type="button" class="btn-sch"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-area clfix">
+                    <h1 class="logo"><a href="../index.html"><img src="../common/images/logo.png" alt="통도환타지아"></a></h1>
+                    <h2 class="blind">메인메뉴</h2>
+                    <nav id="gnb">
+                        <ul class="gnb-list">
+                                <li class="oneD">
+                                    <a href="#">즐길거리</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href="#">추천코스</a></li>
+                                            <li><a href="../enjoy/attraction-list.html">어트랙션</a></li>
+                                            <li><a href="#">체험시설</a></li>
+                                            <li class="twoD">
+                                                <a href="#">편의시설</a>
+                                                <div class="thrD">
+                                                    <ul>
+                                                        <li><a href="#">레스토랑</a></li>
+                                                        <li><a href="#">부대시설</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                            <li><a href="#">드림나이트</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="oneD">
+                                <a href="../price/benefit.html">요금/혜택</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../price/ticket.html">티켓요금</a></li>
+                                        <li class="twoD">
+                                            <a href="../price/benefit.html">혜택정보</a>
+                                            <div class="thrD">
+                                                <ul>
+                                                    <li><a href="../price/benefit.html">할인</a></li>
+                                                    <li><a href="../price/affiliated.html">카드</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">연간이용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">이용안내</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../use-guide/service.html">운영/운휴</a></li>
+                                        <li><a href="#">교통정보</a></li>
+                                        <li><a href="#">이용가이드</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">공지사항</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../notice/">새소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">고객센터</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../customer/faq.html">FAQ</a></li>
+                                        <li><a href="../board/inquiry_write.html">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <div class="fr">
+                        <button type="button" class="btn-ticketing"><span>예매하기</span></button>
+                    </div>
+                </div>
+                <div class="sch-area">
+                    <div class="inner-wrap">
+                        <form id="schForm" name="schForm" action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색폼</legend>
+                                <div class="inp-box">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch">
+                                        <i class="fa-solid fa-magnifying-glass"><span class="blind">검색</span></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn-close">
+                            <i class="fa-solid fa-xmark"><span class="blind">닫기</span></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-top affiliated-top">
+            <div class="inner-wrap">
+                <div class="breadcrum-wrap">
+                    <a href="#" class="home">
+                        <span class="blind">홈</span>
+                    </a>
+                    <div class="one-depth depth">
+                        <a href="#">요금/혜택</a>
+                        <div class="menu-wrap">
+                            <a href="#">요금/혜택</a>
+                            <a href="#">이용안내</a>
+                            <a href="#">공지사항</a>
+                            <a href="#">고객센터</a>
+                        </div>
+                    </div>
+                    <div class="two-depth depth">
+                        <a href="#">혜택정보</a>
+                            <div class="menu-wrap">
+                                <a href="#">티켓요금</a>
+                                <a href="#">혜택정보</a>
+                                <a href="#">연간이용</a>
+                            </div>
+                    </div>
+                    <div class="thd-depth depth">
+                        <a href="#">카드</a>
+                         <div class="menu-wrap">
+                            <a href="benefit.html">할인</a>
+                            <a href="#">카드</a>
+                        </div>   
+                    </div>
+                </div>
+                <div class="txt-box">
+                    <h2>카드</h2>
+                </div>    
+            </div>
+                 
+        </div>
+        <div class="maincon affiliated-con">
+            <div class="inner-wrap">
+                <h3 class="sub-tit">카드·제휴사할인</h3>
+                <div class="tab-wrap">
+                    <ul class="tab-menu">
+                        <li><a href="#">롯데카드</a></li>
+                        <li class="on"><a href="#">삼성카드</a></li>
+                        <li><a href="#">농협카드</a></li>
+                        <li><a href="#">외환카드</a></li>
+                        <li><a href="#">BC카드</a></li>
+                    </ul>
+                </div> 
+                <div id="tab-card-con1" class="tab-con clfix">
+                    <div class="item">
+                        <div class="fl">
+                            <figure>
+                                <img src="images/card-img1.png" alt="데일리카드"></img>
+                            </figure>
+                            <a href="#" class="btn-link">홈페이지바로가기</a>
+                        </div>
+                        <div class="fl">
+                                <div class="info-box">
+                                    <strong>데일리 카드</strong>
+                                    <em>자유이용권 50% 현장할인</em>
+                                    <span>
+                                        통합 연1회,연 2회 제공<br>
+                                        전월 이용금액 40만원 이상
+                                    </span>
+                                </div>
+                        </div>  
+                    </div> 
+                    <div class="item">
+                        <div class="fl">
+                            <figure>
+                                <img src="images/card-img2.png" alt="데일리카드"></img>
+                            </figure>
+                            <a href="#" class="btn-link">홈페이지바로가기</a>
+                        </div>
+                        <div class="fl">
+                                <div class="info-box">
+                                    <strong>데일리 카드</strong>
+                                    <em>종합 자유이용권 50%할인</em>
+                                    <span>연1회,연 12회 제공</span>
+                                </div>
+                        </div>  
+                    </div> 
+                    <div class="item">
+                        <div class="fl">
+                            <figure>
+                                <img src="images/card-img3.png" alt="sk드라이빙패스롯데카드"></img>
+                            </figure>
+                            <a href="#" class="btn-link">홈페이지바로가기</a>
+                        </div>
+                        <div class="fl">
+                                <div class="info-box">
+                                    <strong>SK 드라이빙패스 롯데카드</strong>
+                                    <em>본인 종합이용권 50% 현장할인</em>
+                                    <span>
+                                        연3회,연 12회 제공<br>
+                                        결제금액 20만원까지 할인놀이공원 통합
+                                    </span>
+                                </div>
+                        </div>  
+                    </div> 
+                    <div class="item">
+                        <div class="fl">
+                            <figure>
+                                <img src="images/card-img4.png" alt="올마이쇼핑카드"></img>
+                            </figure>
+                            <a href="#" class="btn-link">홈페이지바로가기</a>
+                        </div>
+                        <div class="fl">
+                                <div class="info-box">
+                                    <strong>올 마이 쇼핑카드(해외)</strong>
+                                    <em>통합 연 1회,연 2회 제공</em>
+                                    <span>
+                                        지난달(1일~말일)일시불 및 할부<br>
+                                        이용실적 20만원 이상일 경우<br>
+                                        연1회,연 6회 제공(놀이공원 통합)
+                                    </span>
+                                </div>
+                        </div>  
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div class="top">
+            <div class="inner-wrap clfix">
+                <div class="fl">
+                    <div class="footer-links">
+                        <a href="#">회사소개</a>
+                        <a href="#">이용약관</a>
+                        <a href="#">개인정보처리방침</a>
+                        <a href="#">이메일무단수집거부</a>
+                    </div>
+                </div>
+                <div class="fr">
+                    <div class="sns-links">
+                    <a href="#"><span class="blind">페이스북</span></a>
+                    <a href="#"><span class="blind">인스타그램</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="btm">
+            <div class="inner-wrap">
+                <address>
+                    <p>(주)동일리조트 통도환타지아</p>
+                    <p>(경남 양산시 하북면 통도7길 68</p>
+                    <p>사업자등록번호 : 621-85-03494</p>
+                    <p>고객상담센터 : 055-379-7000</p>
+                </address>
+                <p class="copyright">
+                    <span>
+                        Copyright &copy; 2004~2017 TONGDO FANTASIA All rights reserved.
+                    </span>
+                </p>
+                <div class="family-site">
+                    <select>
+                        <option value="">패밀리사이트</option>
+                        <option value="http://www">아쿠아환타지아</option>
+                        <option value="http://www">환타지아 콘도&amp;호텔</option>
+                        <option value="http://www">환타지아드림나이트</option>
+                        <option value="http://www">통도파인이스트CC</option>
+                        <option value="http://www">통도환타지아</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </footer> 
+
+</body>
+</html>

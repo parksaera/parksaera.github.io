@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 | 자연속 축제의 나라 통도환타지아<</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <script src="../common/js/ui.js"></script> 
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner-wrap">
+                <div class="top-area clfix">
+                    <div class="fl">
+                        <div class="links clfix">
+                            <a href="#">통도환타지아</a>
+                            <a href="#">아쿠아환타지아</a>
+                            <a href="#">환타지아콘도&호텔</a>
+                            <a href="#">환타지아드림나이트</a>
+                            <a href="#">통도파인이스트CC</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="col1">
+                            <a href="../member/login.html">로그인</a>
+                            <a href="../member/join-step1.html">회원가입</a>
+                            <a href="#">단체프로그램</a>
+                        </div>
+                        <div class="col2">
+                            <div class="lang">
+                                <button type="button" class="btn-lang"><span class="blind">언어선택</span></button>
+                                    <div class="lang-list">
+                                        <a href="#">KOR</a>
+                                        <a href="#">ENG</a>
+                                        <a href="#">JPN</a>
+                                    </div>
+                            </div>
+                            <button type="button" class="btn-sch"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-area clfix">
+                    <h1 class="logo"><a href="../index.html"><img src="../common/images/logo.png" alt="통도환타지아"></a></h1>
+                    <h2 class="blind">메인메뉴</h2>
+                    <nav id="gnb">
+                        <ul class="gnb-list">
+                                <li class="oneD">
+                                    <a href="#">즐길거리</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href="#">추천코스</a></li>
+                                            <li><a href="../enjoy/attraction-list.html">어트랙션</a></li>
+                                            <li><a href="#">체험시설</a></li>
+                                            <li class="twoD">
+                                                <a href="#">편의시설</a>
+                                                <div class="thrD">
+                                                    <ul>
+                                                        <li><a href="#">레스토랑</a></li>
+                                                        <li><a href="#">부대시설</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                            <li><a href="#">드림나이트</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="oneD">
+                                <a href="../price/benefit.html">요금/혜택</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../price/ticket.html">티켓요금</a></li>
+                                        <li class="twoD">
+                                            <a href="../price/benefit.html">혜택정보</a>
+                                            <div class="thrD">
+                                                <ul>
+                                                    <li><a href="../price/benefit.html">할인</a></li>
+                                                    <li><a href="../price/affiliated.html">카드</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">연간이용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">이용안내</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../use-guide/service.html">운영/운휴</a></li>
+                                        <li><a href="#">교통정보</a></li>
+                                        <li><a href="#">이용가이드</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">공지사항</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../notice/news_list.html">새소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">고객센터</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../customer/faq.html">FAQ</a></li>
+                                        <li><a href="../board/inquiry_write.html">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <div class="fr">
+                        <button type="button" class="btn-ticketing"><span>예매하기</span></button>
+                    </div>
+                </div>
+                <div class="sch-area">
+                    <div class="inner-wrap">
+                        <form id="schForm" name="schForm" action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색폼</legend>
+                                <div class="inp-box">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch">
+                                        <i class="fa-solid fa-magnifying-glass"><span class="blind">검색</span></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn-close">
+                            <i class="fa-solid fa-xmark"><span class="blind">닫기</span></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-top member-top">
+            <div class="inner-wrap">
+                <div class="txt-box">
+                    <h2>회원가입</h2>
+                </div>
+            </div>
+        </div>
+        <div class="sub-container">
+            <div class="aggree-terms">
+                <p>약관에 동의해주세요</p>
+
+                <form id="aggreeForm" name="aggreeForm" action="" method="post">
+                    <fieldset>
+                        <legend class="blind">약관동의 폼</legend>
+
+                        <div class="aggree-wrap">
+                            <div class="item">
+                                <input type="checkbox" id="aggreeAll">
+                                <label for="aggreeAll">전체동의</label>
+                            </div>
+                            <div class="item">
+                                <input type="checkbox" id="aggree1">
+                                <label for="aggree1">통도환타지아 이용약관(필수)</label>
+                            </div>
+                            <div class="terms-wrap">
+                                <h4 class="tit1">제 1 조 목적</h4>
+
+                                <p>이 약관은 통도환타지아(주) (이하 "회사"라 합니다)에서 제공하는 인터넷 정보 서비스 (이하 "서비스"라 한다)의 이용 조건ㆍ절차, 이용자의 권리ㆍ의무 및 기타 필요한 사항을 규정함을 목적으로 합니다.</p>
+
+                                <h4 class="tit1">제 2 조 약관의 효력과 변경</h4>
+
+                                <p>서비스는 본 약관에 규정된 조항을 변경 없이 이용자가 수락하는 것을 조건으로 제공됩니다. 이용자께서 본 서비스를 사용하면 본 약관에 대하여 이용자가 동의한다는 것을 의미합니다.</p>
+
+                                <ul>
+                                    <li>(회사)는 약관의 규제 등에 관한 법률, 전자거래 기본법, 전자서명법, 정보통신망 이용 촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자 보호법 등 관련법을 위배하지 않는 범위에서 이 약관을 개정할 수있습니다.</li>
+                                    <li>(회사)는 전자상거래 등에서의 소비자보호에 관한 법률, 전자거래 기본법, 전자서명법, 정보통신망 이용촉진 등에 관한 법률, 방문판매 등에 관한 법률, 소비자보호법 등 관련법을 위해하지 않는 범위에서 이 약관을 개정할 수 있습니다.</li>
+                                    <li>
+                                        (회사)가 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행약관과 함께 "서비스"의 초기화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다.<br> 
+                                        다만, 이용자에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다.<br> 
+                                        이 경우 회사는 개정전 내용과 개정후 내용을 명확하게 비교하여 이용자가 알기 쉽도록 표시합니다.
+                                    </li>
+                                    <li>
+                                        (회사)가 약관을 개정할 경우에는 그 개정약관은 그 적용일자 이후에 체결되는 계약에만 적용되고 그 이전에 이미 체결된 계약에 대해서는 개정전의 약관조항이 그대로 적용됩니다.<br> 
+                                        다만 이미 계약을 체결한 이용자가 개정약관 조항의 적용을 받기를 원하는 뜻을 제3항에 의한 개정약관의 공지기간 내에 회사에 송신하여 회사의 동의를 받은 경우에는 개정약관 조항이 적용됩니다.
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="item">
+                                <input type="checkbox" id="aggree2">
+                                <label for="aggree2">개인정보보호정책 동의(필수)</label>
+                            </div>
+
+                            <div class="terms-wrap">
+                                <div class="">
+                                    통도환타지아는 귀하의 개인정보보호를 매우 중요시하며, 『정보통신망 이용촉진 및 정보보호에 관한 법률』상의 개인정보보호규정 및 정보통신부가 제정한 『개인정보보호지침』을 준수하고 있습니다.<br> 
+                                    통도환타지아는 개인정보취급방침을 통하여 귀하께서 제공하시는 개인정보가 어떠한 용도와 방식으로 이용되고 있으며 개인정보보호를 위해 어떠한 조치가 취해지고 있는지 알려드립니다.<br>
+                                    통도환타지아는 개인정보취급방침을 홈페이지 화면에 공개함으로써 귀하께서 언제나 용이하게 보실 수 있도록 조치하고 있습니다.
+                                </div>    
+                
+                                <div class="">
+                                    <div>
+                                        <h4>1. 개인정보의 수집 및 이용목적</h4>
+                                        <div>
+                                            통도환타지아는 다음과 같은 목적을 위하여 개인정보를 수집하고 있습니다.
+                                            성명, 아이디, 비밀번호, 전화번호, 휴대전화번호 : 회원제 서비스 이용에 따른 본인 확인, 개인 식별, 불량회원의 부정이용방지, 비인가 사용 방지, 가입 의사 확인, 가입회수 제한, 
+                                            만 14세 미만 아동 개인정보 수집 시 법정 대리인 동의 여부 확인, 추후 법정 대리인 본인확인
+                                            전자우편(e-mail)주소, (뉴스레터 수신여부) : 고지사항 전달, 본인 의사 확인, 불만사항 민원 처리 등 원활한 의사소통 경로의 확보, 새로운 서비스, 이벤트 정보 등 최신 정보의 안내
+                                            그 외 선택항목 : 개인맞춤 서비스를 제공하기 위한 자료
+                                            서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 자동으로 생성되어 수집될 수 있습니다.
+                                            IP Address, 쿠키, 방문 일시, 서비스 이용 기록, 불량 이용 기록
+                                
+                                            부가 서비스 및 맞춤식 서비스 이용 또는 이벤트 응모 과정에서 해당 서비스의 이용자에 한해서만 아래와 같은 정보들이 수집될 수 있습니다.
+                                            주소, 연락처, 사용 이동통신사 등
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h4>2. 개인정보의 수집범위</h4>
+                                        <div>
+                                            통도환타지아리조트는 별도의 회원가입 절차 없이 대부분의 컨텐츠에 자유롭게 접근할 수 있습니다. 통도환타지아리조트의 회원제 서비스를 이용하시고자 할 경우 다음의 필수사항을 입력해주셔야 하며, 선택사항은 입력하시지 않았다 하여 서비스 이용에 제한은 없습니다.
+                                
+                                            회원가입 시 수집하는 개인정보의 범위
+                                            성명, 희망 ID, 비밀번호, 주소, 전화번호, 휴대전화 번호, 이메일주소, 생년월일
+                                
+                                            서비스 이용과정에서 생성, 수집되는 정보
+                                            서비스 이용기록, 접속로그, 쿠키, 접속IP정보, 결제기록, 이용정지 기록
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <h4>3. 개인정보의 보유기간 및 이용기간</h4>
+                                        <div>
+                                            귀하의 개인정보는 다음과 같이 개인정보의 수집목적 또는 제공받은 목적이 달성되면 지체 없이 파기됩니다. 단, 상법 등 법령의 규정에 의하여 보존할 필요성이 있는 경우에는 예외로 합니다.
+                                            회원가입정보의 경우, 회원가입을 탈퇴하거나 회원에서 제명된 때
+                                            설문조사, 이벤트 등 일시적 목적을 위하여 수집된 경우 : 당해 설문 조사, 이벤트 등이 종료한 때
+                                            위 개인정보 수집목적 달성 시 즉시파기 원칙에도 불구하고 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 전자상거래 등에서의 소비자보호에 관한 법률 등에 근거하여 일정기간 보유합니다.
+                                            소비자의 불만 또는 분쟁처리에 관한 기록 : 3년
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <input type="checkbox" id="aggree3">
+                                <label for="aggree3">프로모션 소식 및 이벤트 정보 수신동의 (선택)</label>
+                            </div>
+
+                        </div>
+
+                        <div class="btn-wrap">
+                            <a href="join-step2.html" class="btn-filled-lg-p" id="btn-next">다음단계</ㅁclass=>
+                        </div>
+                        
+                    </fieldset>
+                </form>
+            </div>
+        </div>   
+        <footer id="footer">
+            <div class="top">
+                <div class="inner-wrap clfix">
+                    <div class="fl">
+                        <div class="footer-links">
+                            <a href="#">회사소개</a>
+                            <a href="#">이용약관</a>
+                            <a href="#">개인정보처리방침</a>
+                            <a href="#">이메일무단수집거부</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="sns-links">
+                        <a href="#"><span class="blind">페이스북</span></a>
+                        <a href="#"><span class="blind">인스타그램</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="btm">
+                <div class="inner-wrap">
+                    <address>
+                        <p>(주)동일리조트 통도환타지아</p>
+                        <p>(경남 양산시 하북면 통도7길 68</p>
+                        <p>사업자등록번호 : 621-85-03494</p>
+                        <p>고객상담센터 : 055-379-7000</p>
+                    </address>
+                    <p class="copyright">
+                        <span>
+                            Copyright &copy; 2004~2017 TONGDO FANTASIA All rights reserved.
+                        </span>
+                    </p>
+                    <div class="family-site">
+                        <select>
+                            <option value="">패밀리사이트</option>
+                            <option value="http://www">아쿠아환타지아</option>
+                            <option value="http://www">환타지아 콘도&amp;호텔</option>
+                            <option value="http://www">환타지아드림나이트</option>
+                            <option value="http://www">통도파인이스트CC</option>
+                            <option value="http://www">통도환타지아</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer> 
+    </div>
+</body>
+</html>

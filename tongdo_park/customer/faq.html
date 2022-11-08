@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ | 자연속 축제의 나라 통도환타지아</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">    
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="../common/css/common.css">
+    <script src="../common/js/ui.js"></script> 
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="inner-wrap">
+                <div class="top-area clfix">
+                    <div class="fl">
+                        <div class="links clfix">
+                            <a href="#">통도환타지아</a>
+                            <a href="#">아쿠아환타지아</a>
+                            <a href="#">환타지아콘도&호텔</a>
+                            <a href="#">환타지아드림나이트</a>
+                            <a href="#">통도파인이스트CC</a>
+                        </div>
+                    </div>
+                    <div class="fr">
+                        <div class="col1">
+                            <a href="../member/login.html">로그인</a>
+                            <a href="../member/join-step1.html">회원가입</a>
+                            <a href="#">단체프로그램</a>
+                        </div>
+                        <div class="col2">
+                            <div class="lang">
+                                <button type="button" class="btn-lang"><span class="blind">언어선택</span></button>
+                                    <div class="lang-list">
+                                        <a href="#">KOR</a>
+                                        <a href="#">ENG</a>
+                                        <a href="#">JPN</a>
+                                    </div>
+                            </div>
+                            <button type="button" class="btn-sch"><span class="blind">검색</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="gnb-area clfix">
+                    <h1 class="logo"><a href="../index.html"><img src="../common/images/logo.png" alt="통도환타지아"></a></h1>
+                    <h2 class="blind">메인메뉴</h2>
+                    <nav id="gnb">
+                        <ul class="gnb-list">
+                                <li class="oneD">
+                                    <a href="#">즐길거리</a>
+                                    <div class="sub-menu-wrap">
+                                        <ul>
+                                            <li><a href="#">추천코스</a></li>
+                                            <li><a href="../enjoy/attraction-list.html">어트랙션</a></li>
+                                            <li><a href="#">체험시설</a></li>
+                                            <li class="twoD">
+                                                <a href="#">편의시설</a>
+                                                <div class="thrD">
+                                                    <ul>
+                                                        <li><a href="#">레스토랑</a></li>
+                                                        <li><a href="#">부대시설</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li> 
+                                            <li><a href="#">드림나이트</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            <li class="oneD">
+                                <a href="../price/benefit.html">요금/혜택</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../price/ticket.html">티켓요금</a></li>
+                                        <li class="twoD">
+                                            <a href="../price/benefit.html">혜택정보</a>
+                                            <div class="thrD">
+                                                <ul>
+                                                    <li><a href="../price/benefit.html">할인</a></li>
+                                                    <li><a href="../price/affiliated.html">카드</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li><a href="#">연간이용</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">이용안내</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../use-guide/service.html">운영/운휴</a></li>
+                                        <li><a href="#">교통정보</a></li>
+                                        <li><a href="#">이용가이드</a></li> 
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">공지사항</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../notice/news_list.html">새소식</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="oneD">
+                                <a href="#">고객센터</a>
+                                <div class="sub-menu-wrap">
+                                    <ul>
+                                        <li><a href="../customer/faq.html">FAQ</a></li>
+                                        <li><a href="../board/inquiry_write.html">문의하기</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>    
+                    </nav>
+                    <div class="fr">
+                        <button type="button" class="btn-ticketing"><span>예매하기</span></button>
+                    </div>
+                </div>
+                <div class="sch-area">
+                    <div class="inner-wrap">
+                        <form id="schForm" name="schForm" action="" method="get">
+                            <fieldset>
+                                <legend class="blind">검색폼</legend>
+                                <div class="inp-box">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch">
+                                        <i class="fa-solid fa-magnifying-glass"><span class="blind">검색</span></i>
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <button type="button" class="btn-close">
+                            <i class="fa-solid fa-xmark"><span class="blind">닫기</span></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="sub-top faq-top">
+            <div class="inner-wrap">
+                <div class="breadcrum-wrap">
+                    <a href="#" class="home">
+                        <span class="blind">홈</span>
+                    </a>
+                    <div class="one-depth depth">
+                        <a href="#">고객센터</a>
+                        <div class="menu-wrap">
+                            <a href="#">요금/혜택</a>
+                            <a href="#">이용안내</a>
+                            <a href="#">공지사항</a>
+                            <a href="#">고객센터</a>
+                        </div>
+                    </div>
+                    <div class="two-depth depth">
+                        <a href="#">FAQ</a>
+                            <div class="menu-wrap">
+                                <a href="#">FAQ</a>
+                                <a href="../board/inquiry_write.html">문의하기</a>
+                            </div>
+                    </div>
+                </div>
+                <div class="txt-box">
+                    <h2>FAQ</h2>
+                </div>    
+            </div>   
+        </div>
+        <div class="sub-container faq-con">
+            <div class="inner-wrap">
+                <div class="faq-tab-wrap">    
+                    <div class="menu-wrap">
+                        <ul class="tab-menu">
+                            <li class="on"><a href="#">전체</a></li>
+                            <li><a href="#">이용권</a></li>
+                            <li><a href="#">할인우대</a></li>
+                            <li><a href="#">이용정보</a></li>
+                            <li><a href="#">회원</a></li>
+                            <li><a href="#">채용</a></li>
+                        </ul>
+                    </div>
+
+                    <form name="" id="" method="get" action="">
+                        <fieldset>
+                            <legend class="blind">검색하기</legend>
+
+                            <div class="sch-box">
+                                <div class="sch-result">총 3건</div>
+                                <div class="sch-area">
+                                    <span class="inp-txt">
+                                        <input type="text" id="" name="" placeholder="검색어를 입력해주세요">
+                                    </span>
+                                    <button type="button" class="btn-sch"><i class="fa-solid fa-magnifying-glass"></i><p class="blind">검색</p></button>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
+
+                    <div id="tab-faq-con1" class="tab-faq-con">
+                        <ul>
+                            <li>
+                                <div class="fre">
+                                    <div class="ico-q"><span class="blind">질문</span></div> 
+                                    <strong>자유이용권을 사면 입장권은 따로 사야 하나요?</strong>
+                                </div>
+                                <div class="ask">
+                                    <div class="ico-a"><span class="blind">답변</span></div>
+                                    <div class="ask-txt">
+                                        자유이용권을 사시면 입장은 무료입니다.<br>
+                                        따라서 자유이용권을 구입하시면 입장권을 따로 사실 필요가 전혀 없답니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fre">
+                                    <div class="ico-q"><span class="blind">질문</span></div> 
+                                    <strong>36개월 미만 아기들도 자유이용권을 끊어야 하나요?</strong>
+                                </div>
+                                <div class="ask">
+                                    <div class="ico-a"><span class="blind">답변</span></div>
+                                    <div class="ask-txt">
+                                        통도환타지아는 36개월 미만 아이들을 무료입장 해드리고 있습니다.<br>
+                                        하지만 놀이기구를 이용하시려면 유료로 티켓을 구매하셔야 합니다.<br>
+                                        부모님과 함케 탈 수 있는 놀이 기종은 따로 티켓을 발권하지 않으셔도 괜찮지만, 유아 혼자 탈 수 있는 유아 기종을 이용하시려면<br>
+                                        유아 자유 이용권, 유아 BIG 3, 유아 개별 티켓을 구매하셔야 합니다.<br>
+                                        유아 개별 티켓은 환타지아 성, 키즈파크에 있는 발권기에서 구입하실 수 있으며 가격은 3,000원입니다.
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="fre">
+                                    <div class="ico-q"><span class="blind">질문</span></div> 
+                                    <strong>통도환타지아의 연간회원에 대해서 알고 싶습니다.</strong>
+                                </div>
+                                <div class="ask">
+                                    <div class="ico-a"><span class="blind">답변</span></div>
+                                    <div class="ask-txt">
+                                        저희 공원의 연간회원은 단체상담소에 방문하시면 바로 사진 촬영 및 카드 발급이 가능합니다.<br>
+                                        자세한 사항은 홈페이지 연간회원안내를 클릭하여 주시기 바랍니다.
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
