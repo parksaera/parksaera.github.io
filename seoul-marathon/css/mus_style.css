@@ -1,0 +1,5 @@
+/* 이 파일은 mus_styl.css 파일입니다. 
+이파일에서 두개의 css 파일을 로드합니다. css 파일안에 css파일을 불러오기 */
+
+@import url(common.css);
+@import url(main.css);
